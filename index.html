@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dice Game</h1>
+      <button id="toggleGameMode">Toggle Game Mode</button>
+      <p id="currentMode">Current Mode: User vs PC</p>
+      <div class="dice-container">
+        <div class="dice">
+          <h2>Player 1 Roll</h2>
+          <div id="player1Dice" class="die"></div>
+          <button id="player1RollButton" onclick="rollDice('player1')">
+            Roll Dice
+          </button>
+        </div>
+        <div class="dice">
+          <h2>Player 2 Roll</h2>
+          <div id="player2Dice" class="die"></div>
+          <button id="player2RollButton" onclick="rollDice('player2')">
+            Roll Dice
+          </button>
+        </div>
+      </div>
+      <div id="result"></div>
+    </div>
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
